@@ -10,7 +10,7 @@ pipeline {
         stage('Build')  {
             steps {
                 git branch: 'main', url: 'https://github.com/myeze/WorkCode2'
-                bat python test.py "$PYTHON_HOME"
+                bat python test.py
             }
         }
         stage ('Test') {
